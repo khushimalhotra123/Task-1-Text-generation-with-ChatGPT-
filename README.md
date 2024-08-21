@@ -1,8 +1,7 @@
-Text-generation-with-GPT-2
-
+# Text-generation-with-GPT-2
 This repository contains code and resources for generating text using OpenAI's GPT-2 model. GPT-2 is a large transformer-based language model capable of generating coherent and contextually relevant text based on a given prompt.
 
-Table of Contents
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -12,7 +11,7 @@ Table of Contents
 - [Contributing](#contributing)
 - [License](#license)
 
-Installation
+## Installation
 
 1. **Clone the repository:**
 
@@ -36,23 +35,23 @@ Installation
 
     The `requirements.txt` file includes essential libraries such as `transformers`, `torch`, and others necessary for running GPT-2.
 
-Usage
+## Usage
 
 To generate text using GPT-2, you can run the `generate_text.py` script. This script takes a prompt as input and generates text based on it.
 
-Example Command:
+### Example Command:
 
 ```bash
 python generate_text.py --prompt "Once upon a time" --max_length 50 --temperature 0.7
 ```
 
-Arguments:
+### Arguments:
 
 - `--prompt`: The initial text to start the generation.
 - `--max_length`: The maximum length of the generated text.
 - `--temperature`: Controls the randomness of predictions by scaling the logits before applying softmax.
 
-Examples
+## Examples
 
 Here are some examples of text generated using this repository:
 
@@ -64,11 +63,11 @@ Here are some examples of text generated using this repository:
   
   **Generated Text:** "The secrets of the universe lie within the fabric of spacetime. Scientists have long debated whether..."
 
-Training
+## Training
 
 This repository also includes scripts for training and fine-tuning GPT-2 on your own datasets. 
 
-Fine-Tuning on Custom Data:
+### Fine-Tuning on Custom Data:
 
 To fine-tune GPT-2 on custom data, place your text data in the `data/` directory and use the `train.py` script:
 
@@ -76,13 +75,13 @@ To fine-tune GPT-2 on custom data, place your text data in the `data/` directory
 python train.py --data_path ./data/my_dataset.txt --epochs 3 --batch_size 2
 ```
 
-Arguments:
+### Arguments:
 
 - `--data_path`: Path to the text file used for training.
 - `--epochs`: Number of training epochs.
 - `--batch_size`: Batch size for training.
 
-Model Fine-Tuning
+## Model Fine-Tuning
 
 If you'd like to fine-tune GPT-2 on a specific domain or set of texts, you can use the `fine_tune.py` script:
 
@@ -92,11 +91,11 @@ python fine_tune.py --dataset_path ./data/my_dataset.txt --model_save_path ./mod
 
 This will allow you to save a custom fine-tuned GPT-2 model that you can later use for more specific text generation tasks.
 
-Contributing
+## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you have any ideas, suggestions, or bug reports.
 
-Steps to Contribute:
+### Steps to Contribute:
 
 1. Fork this repository.
 2. Create a new branch (`git checkout -b feature-branch`).
@@ -105,6 +104,6 @@ Steps to Contribute:
 5. Push to the branch (`git push origin feature-branch`).
 6. Open a pull request.
 
-License
+## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
